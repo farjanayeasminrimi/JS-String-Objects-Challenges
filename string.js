@@ -9,7 +9,7 @@ for (let letter of fullName) {
     count++;
   }
 }
-console.log(count);
+// console.log(count);
 
 ////////////////////////////////////////////////////////////
 
@@ -25,13 +25,26 @@ for (letter of fullName) {
     countA++;
   }
 }
-console.log(aCount);
-console.log(countA);
+// console.log(aCount);
+// console.log(countA);
+
+///////////////////////////////////////////////////////////////
 
 /*
 Task-3:
 Check whether a string contains all the vowels a, e, i, o, u
 */
+
+let vowelString = `I am learning Web Development`;
+let loweCaseString = vowelString.toLocaleLowerCase();
+let vowel = `aeiou`;
+for (character of loweCaseString) {
+  if (vowel.includes(character)) {
+    console.log(character);
+  }
+}
+
+////////////////////////////////////////////////////////////////
 
 /*
 Task-4:
