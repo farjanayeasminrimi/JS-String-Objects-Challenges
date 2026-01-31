@@ -9,7 +9,7 @@ for (let letter of fullName) {
     count++;
   }
 }
-// console.log(count);
+console.log(count);
 
 ////////////////////////////////////////////////////////////
 
@@ -25,8 +25,8 @@ for (letter of fullName) {
     countA++;
   }
 }
-// console.log(aCount);
-// console.log(countA);
+console.log(aCount);
+console.log(countA);
 
 ///////////////////////////////////////////////////////////////
 
@@ -45,9 +45,9 @@ for (character of vowel) {
   }
 }
 if (existingVowel !== vowel) {
-  // console.log("Doesn't contain all vowel");
+  console.log("Doesn't contain all vowel");
 } else {
-  // console.log("Contain all vowel");
+  console.log("Contain all vowel");
 }
 
 ////////////////////////////////////////////////////////////////
@@ -59,7 +59,7 @@ Hint: You should be able to check whether x or X exists. After that, search onli
 */
 
 let replaceString = `X-ray has been soo expensive. AXes become priceless. Exes become rootless.`;
-// console.log(replaceString);
+console.log(replaceString);
 for (char of replaceString) {
   if (char.includes("X")) {
     replaceString = replaceString.replace("X", "Y");
@@ -67,7 +67,7 @@ for (char of replaceString) {
     replaceString = replaceString.replace("x", "y");
   }
 }
-// console.log(replaceString);
+console.log(replaceString);
 
 /*
 Task-5:
