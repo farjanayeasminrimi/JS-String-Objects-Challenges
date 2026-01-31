@@ -1,10 +1,32 @@
 /*Task-1:
 Count how many times a string has the letter a
 */
+let fullName = `Farjana Yeasmin Rimi & Ahasan`;
+let count = 0;
+for (let letter of fullName) {
+  // console.log(letter.includes("a"));
+  if (letter.includes("a") === true) {
+    count++;
+  }
+}
+console.log(count);
+
+////////////////////////////////////////////////////////////
 
 /*Task-2:
 Count how many times a string has the letter a or A
 */
+let aCount = 0;
+let countA = 0;
+for (letter of fullName) {
+  if (letter.includes("a") === true) {
+    aCount++;
+  } else if (letter.includes("A") === true) {
+    countA++;
+  }
+}
+console.log(aCount);
+console.log(countA);
 
 /*
 Task-3:
