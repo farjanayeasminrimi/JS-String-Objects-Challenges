@@ -38,10 +38,16 @@ Check whether a string contains all the vowels a, e, i, o, u
 let vowelString = `I am learning Web Development`;
 let loweCaseString = vowelString.toLocaleLowerCase();
 let vowel = `aeiou`;
-for (character of loweCaseString) {
-  if (vowel.includes(character)) {
-    console.log(character);
+let existingVowel = "";
+for (character of vowel) {
+  if (loweCaseString.includes(character)) {
+    existingVowel += character;
   }
+}
+if (existingVowel !== vowel) {
+  // console.log("Doesn't contain all vowel");
+} else {
+  // console.log("Contain all vowel");
 }
 
 ////////////////////////////////////////////////////////////////
@@ -51,6 +57,17 @@ Task-4:
 If a given string has either x, replace x by y. if the given string has X, replace it by Y.
 Hint: You should be able to check whether x or X exists. After that, search online how to replace a character in a string.
 */
+
+let replaceString = `X-ray has been soo expensive. AXes become priceless. Exes become rootless.`;
+// console.log(replaceString);
+for (char of replaceString) {
+  if (char.includes("X")) {
+    replaceString = replaceString.replace("X", "Y");
+  } else if (char.includes("x")) {
+    replaceString = replaceString.replace("x", "y");
+  }
+}
+// console.log(replaceString);
 
 /*
 Task-5:
