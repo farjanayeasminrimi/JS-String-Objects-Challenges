@@ -7,17 +7,35 @@ const colors = {
     "golden rod": '#daa520'
 };
 */
+const colors = {
+  red: "#ff0000",
+  green: "#00ff00",
+  blue: "#0000ff",
+  "golden rod": "#daa520",
+};
+let goldenColor = colors["golden rod"];
+console.log(goldenColor);
+
+////////////////////////////////////////////////////////////////
 
 /*
 Task-2
 For this object below add a property named passenger capacity with value 5
-
 const car = {
     make: "Toyota",
     model: "Corolla",
     year: 2020
 };
 */
+const car = {
+  make: "Toyota",
+  model: "Corolla",
+  year: 2020,
+};
+car["passenger capacity"] = 5;
+console.log(car);
+
+///////////////////////////////////////////////////////////
 
 /*
 Task-3
@@ -33,13 +51,25 @@ const student = {
     }
 };
 */
+const student = {
+  name: "Hamim Sakep",
+  id: 5421,
+  physics: {
+    subject: "HSC Physics",
+    author: "Shahjahan Tapan",
+    marks: 30,
+  },
+};
+let physicsMark = student.physics.marks;
+console.log(physicsMark);
+
+////////////////////////////////////////////////////////////////////
 
 /*
 Task-4
 Count the number of properties.
 
 Input:
-
 let student = {
     name: 'Ariana Grande',
     age: 21,
@@ -48,13 +78,22 @@ let student = {
 };
 Output: 4
 */
+let studentInfo = {
+  name: "Ariana Grande",
+  age: 21,
+  city: "Gaibandha",
+  isStudent: true,
+};
+let propNum = Object.keys(studentInfo).length;
+console.log(propNum);
+
+//////////////////////////////////////////////////////////////////
 
 /*
 Task-5 (Hard)
 Loop through an object and print the key-value pairs with their types
 
 Input:
-
 let myObject = {
 name: 'John Doe',
 age: 25,
@@ -68,3 +107,17 @@ key: age | type:  number
 key: city | type:  string
 key: isStudent | type:  boolean
 */
+
+let myObject = {
+  name: "John Doe",
+  age: 25,
+  city: "Example City",
+  isStudent: true,
+};
+for (prop in myObject) {
+  let key = prop;
+  let value = myObject[prop];
+  let type = typeof value;
+  let output = "key-" + key + ": " + value + " | " + "type " + type;
+  console.log(output);
+}
