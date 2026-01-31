@@ -73,3 +73,14 @@ for (char of replaceString) {
 Task-5:
 Capitalize Every first Letter of each word in a String
 */
+
+let sentence = `i am a hablu. hoye thaki paglu. na khai, na ghumai. ebhabei jay somoy`;
+let splitSentence = sentence.split(" ");
+let capitalizeSentence = "";
+for (eachWord of splitSentence) {
+  let firstLetter = eachWord[0].toUpperCase();
+  let sliceWord = eachWord.slice(1);
+  let fullWord = firstLetter.concat(sliceWord);
+  capitalizeSentence = capitalizeSentence + " " + fullWord;
+}
+console.log(capitalizeSentence.trim());
